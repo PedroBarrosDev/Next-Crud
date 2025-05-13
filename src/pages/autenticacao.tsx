@@ -93,7 +93,7 @@ export default function Autenticacao() {
         {modo === "login" ? (
           <p className="mt-8">
             Novo por aqui?
-            <a
+            <div
               onClick={() => setModo("cadastro")}
               className={`
                             text-blue-500 hover:text-blue-700 font-semibold
@@ -102,12 +102,12 @@ export default function Autenticacao() {
             >
               {" "}
               Crie um Conta Gratuitamente
-            </a>
+            </div>
           </p>
         ) : (
           <p className="mt-8">
             Já faz parte da nossa comunidade?
-            <a
+            <div
               onClick={() => setModo("login")}
               className={`
                             text-blue-500 hover:text-blue-700 font-semibold
@@ -116,7 +116,7 @@ export default function Autenticacao() {
             >
               {" "}
               Entre com a suas Credenciais
-            </a>
+            </div>
           </p>
         )}
       </div>
